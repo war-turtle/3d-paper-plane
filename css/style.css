@@ -1,0 +1,51 @@
+*{
+  margin:0;
+  padding:0;
+  outline:0;
+}
+body{
+  background-color:skyblue;
+}
+.container{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width:50vh;
+  height:50vh;
+  transform:rotateZ(0) rotateX(-20deg) rotateY(-90deg);
+  transform-style:preserve-3d;
+  z-index:-1;
+}
+/*  */
+#lside{
+  border-top:25vh solid transparent;
+  border-right:50vh solid  blue;
+  transform:rotate(-5deg) rotateY(0deg) rotateX(-10deg);
+  transform-origin:bottom;
+}
+#rside{
+  margin-top:-25vh;
+  border-top:25vh solid transparent;
+  border-right:50vh solid blue;
+  transform:rotate(-5deg) rotateY(0deg) rotateX(10deg);
+  transform-origin:bottom;
+}
+#lwing{
+   margin-top:-25vh;
+  border-bottom:25vh solid red;
+  border-right:30vh solid transparent;
+  border-left:50vh solid transparent;
+  transform:rotate(-22deg) rotateX(55deg) rotateY(-10deg) rotateZ(25deg);
+  transform-origin:top;
+}
+#rwing{
+  margin-top:-25vh;
+  border-bottom:25vh solid red;
+  border-right:30vh solid transparent;
+  border-left:50vh solid transparent;
+  transform:rotate(-22deg) rotateX(-55deg) rotateY(10deg) rotateZ(25deg);
+  transform-origin:top;
+}
